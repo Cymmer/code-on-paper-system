@@ -12,7 +12,7 @@ from test_cases import get_request_body_test_cases, get_test_cases, get_labels_a
 from insensitive_checking import insensitive_checking_preprocessing
 
 problem_number = 1
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAPI_SECRET_KEY")
 rootdir = f"/Users/cymmerjohnmaranga/Downloads/Problem_{problem_number}_Test copy"
 
 file_paths = []
